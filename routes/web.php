@@ -11,10 +11,25 @@
 |
 */
 
+use Illuminate\Routing\Router;
+
 Route::get('/', function () {
     return redirect(route('home'));
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => 'auth'], function (Router $router) {
+    $router->get('home', 'HomeController@index')->name('home');
+
+    $router->group(['prefix' => 'profile', 'as' => 'profile'], function (Router $router) {
+        $router->get('/', 'ProfileController@index');
+        $router->post('updateInfo', 'ProfileController@updateInfo')->name('.info');
+        $router->post('updatePass', 'ProfileController@updatePass')->name('.pass');
+    });
+
+
+
+
+});
+

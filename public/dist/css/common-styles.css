@@ -1,0 +1,22 @@
+#alertbox {
+    display: none;
+    position: fixed;
+    left: 15px;
+    bottom: 0;
+    min-width: 200px;
+    z-index: 9999;
+}
+
+#alertbox .close {
+    margin-left: 10px;
+}
+
+#alertbox strong {
+    display: inline-block;
+    padding-top: 2px;
+}
+
+#alertbox i.sign {
+    float: left;
+    margin-right: 10px;
+}

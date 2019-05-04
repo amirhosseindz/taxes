@@ -1,0 +1,20 @@
+/*@font-face {
+    font-family: 'IRAN-sans';
+    src: url('IRAN-sans/IRAN-sans.eot?#iefix') format('embedded-opentype'), url('IRAN-sans/IRAN-sans.woff') format('woff'), url('IRAN-sans/IRAN-sans.ttf') format('truetype'), url('IRAN-sans/IRAN-sans.svg#IRAN-sans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'byekan';
+    src: url(yekan/yekan.woff) format('woff'),
+    url(yekan/yekan.eot) format('embedded-opentype'),
+    url(yekan/yekan.svg),
+    url(yekan/yekan.ttf) format('truetype'),
+    url(yekan/yekannumbers.woff),
+    url(yekan/yekannumbers.ttf),
+    url(yekan/yekannumbers.svg),
+    url(yekan/yekannumbers.eot);
+    font-weight: normal;
+    font-style: normal;
+}
