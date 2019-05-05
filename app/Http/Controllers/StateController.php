@@ -62,10 +62,6 @@ class StateController extends Controller
      */
     public function update(StateFormRequest $request, State $state)
     {
-        $this->ajaxValidate($request, [
-            'name' => 'required|string|max:191'
-        ]);
-
         $result = $state->update(['name' => $request->input('name')]);
 
         return response([
