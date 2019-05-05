@@ -2,21 +2,6 @@
 $.extend( true, $.fn.dataTable.defaults, {
 	"sDom": "<'row'<'col-sm-6'l><'col-sm-6'f>r>t<'row'<'col-sm-6'i><'col-sm-6'p>>",
 	"sPaginationType": "bootstrap",
-	"oLanguage": {
-		"sLengthMenu": "_MENU_ Item In Each Page",
-		"sEmptyTable": "No Item to Display",
-		"sInfo": "Show _START_ To _END_ From _TOTAL_ Items",
-		"sInfoEmpty": "Show 0 To 0 From 0 Item",
-		"sInfoFiltered": "(Search Through _MAX_ Items)",
-		"sLoadingRecords": "Loading ...",
-		"sProcessing": "Processing ...",
-		"sSearch": "Search :",
-		"sZeroRecords": "No Results",
-		"oPaginate": {
-			"sPrevious": "Prev",
-			"sNext": "Next"
-		}
-	},
 	"aoColumnDefs": [{
 		'bSortable': false,
 		'aTargets': [-1,0]
@@ -60,8 +45,8 @@ $.extend( $.fn.dataTableExt.oPagination, {
 
 			$(nPaging).addClass('pagination').append(
 				'<ul>'+
-					'<li class="prev disabled"><a href="#">&rarr; '+oLang.sPrevious+'</a></li>'+
-					'<li class="next disabled"><a href="#">'+oLang.sNext+' &larr; </a></li>'+
+					'<li class="prev disabled"><a href="#">&larr; '+oLang.sPrevious+'</a></li>'+
+					'<li class="next disabled"><a href="#">'+oLang.sNext+' &rarr;</a></li>'+
 				'</ul>'
 			);
 			var els = $('a', nPaging);

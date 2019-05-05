@@ -1,3 +1,6 @@
+/**
+Alert Box :
+ */
 #alertbox {
     display: none;
     position: fixed;
@@ -19,4 +22,100 @@
 #alertbox i.sign {
     float: left;
     margin-right: 10px;
+}
+
+/**
+DataTables :
+ */
+.dataTable {
+    width: 100% !important;
+}
+
+.dataTables_length , .dataTables_filter{
+    padding:15px;
+}
+
+.dataTables_info{
+    padding:0 15px;
+}
+
+.dataTables_length {
+    float: left;
+}
+
+.dataTables_filter {
+    float: right;
+}
+
+.dataTables_length select {
+    width: 65px;
+}
+
+.dataTables_length label, .dataTables_filter label {
+    font-weight: 300;
+}
+
+.dataTables_filter label {
+    width: 100%;
+}
+
+.dataTables_filter label input {
+    width: 78%;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination li {
+    float: left;
+    margin: 0 1px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    list-style: none;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination li.disabled a{
+    color: #c7c7c7;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination li a{
+    color: #797979;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination li:hover a, .dataTables_paginate.paging_bootstrap.pagination li.active a{
+    color: #797979;
+    background: #eee;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.dataTables_paginate.paging_bootstrap.pagination {
+    float: right;
+    margin-right: 15px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.dataTable tr:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+thead>tr>th.dt_searchable:before {
+    opacity: 0.2;
+    content: "\f002";
+    margin-right: 2px;
+    font: 12px FontAwesome;
+}
+
+.dataTables_filter > label > button {
+    border-radius: 0;
+}
+
+.dataTables_filter > label > button:first-of-type {
+    margin-left: -7px;
+}
+
+div.dataTables_wrapper div.dataTables_processing {
+    background-color: #00000078;
+    color: white;
 }
