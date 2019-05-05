@@ -316,12 +316,11 @@ $.fn.ajaxForm = function (settings) {
                 error: function (data) {
                     data = data.responseJSON;
                     if (typeof data !== 'undefined') {
-                        var alertStatus = data.status;
-                        $.each(data, function (key, value) {
+                        var alertStatus = data.message,
+                            errors = data.errors;
+                        $.each(errors, function (key, value) {
                             var input = form.find('*[name="' + key + '"]:first');
                             if (input.length) {
-                                if(key === 'status')
-                                    alertStatus = undefined;
                                 input.closest('.form-group').addClass('has-error');
                                 if (config.showErrorMessages)
                                     input.after('<span class="help-block"> <strong>' + value + '</strong> </span>');
