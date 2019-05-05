@@ -446,7 +446,7 @@ $(function () {
                     if (url !== undefined) {
                         btn.html('<i class="fa fa-spin fa-spinner"></i>');
                         $.ajax({
-                            method: 'post',
+                            method: 'get',
                             url: url,
                             data: {_token: CSRF_TOKEN},
                             dataType: 'json',
