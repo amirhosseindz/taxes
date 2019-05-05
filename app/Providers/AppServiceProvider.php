@@ -23,6 +23,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->app['validator']->extend('old_password', function ($attribute, $value, $parameters) {
+            return \Hash::check($value, $parameters[0]);
+        });
+
         \View::composer('*', function ($view) {
             $view->with('user', \Auth::user());
         });

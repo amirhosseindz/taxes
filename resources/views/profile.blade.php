@@ -1,19 +1,11 @@
 @extends('layouts.app')
 
-@section('css')
-    <style>
-        input[name='email'], input[name='mobile'], input[name='birthdate'] {
-            direction: ltr;
-        }
-    </style>
-@endsection
-
 @section('content')
     <div class="row">
         <aside class="profile-nav col-lg-3">
             <div class="box box-primary">
                 <div class="box-body box-profile">
-                    <img class="profile-user-img img-responsive img-circle" src="dist/img/user4-128x128.jpg" alt="User Image">
+                    <img class="profile-user-img img-responsive img-circle" src="dist/img/user2-160x160.jpg" alt="User Image">
                     <h3 class="profile-username text-center">{{ $user->name }}</h3>
                     <p class="text-muted text-center">{{ $user->email }}</p>
                 </div>
