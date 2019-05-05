@@ -28,8 +28,6 @@ Route::group(['middleware' => 'auth'], function (Router $router) {
         $router->post('updatePass', 'ProfileController@updatePass')->name('.pass');
     });
 
-
-
-
+    $router->resource('states', 'StateController')->except(['show']);
 });
 
