@@ -29,5 +29,7 @@ Route::group(['middleware' => 'auth'], function (Router $router) {
     });
 
     $router->resource('states', 'StateController')->except(['show']);
+
+    $router->resource('counties', 'CountyController')->except(['show']);
 });
 
