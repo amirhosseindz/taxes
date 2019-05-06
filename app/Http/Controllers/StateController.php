@@ -14,7 +14,7 @@ class StateController extends Controller
      */
     public function index()
     {
-        $states = State::all();
+        $states = State::latest()->get();
 
         return view('states', compact('states'));
     }

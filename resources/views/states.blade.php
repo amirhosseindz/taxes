@@ -61,7 +61,7 @@
                         <tbody>
                         @if( ! $states->count())
                             <tr class="empty">
-                                <td colspan="3">
+                                <td colspan="2">
                                     <p>There is no state. Please create one.</p>
                                 </td>
                             </tr>
