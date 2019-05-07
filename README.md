@@ -14,4 +14,10 @@ cd jobleads-taxes
 3. Copy `.env.example` to `.env` and fill the needed parameters for database connection in it.
 4. Run `php artisan key:generate`
 5. Run `php artisan migrate`
+
+   If you want to fill the database with dummy data, run `php artisan migrate:fresh --seed` instead. Then you can login to the app using these credentials :
+   ```
+   username: demo
+   password: demo123
+   ```
 6. Run `php artisan serve` and enjoy!
