@@ -2,7 +2,9 @@
 A software that can be used to calculate statistics about the tax income of a country.
 
 # Requirements
-[Same as Laravel 5.8 requirements.](https://laravel.com/docs/5.8#installation)
+[Same as Laravel 5.8 requirements](https://laravel.com/docs/5.8#installation) + MySQL(newer versions recommended)
+
+For the database you should prepare and create one in MySQL.
 
 # Installation
 1. Clone the repository and then change the current directory to `jobleads-taxes`:
