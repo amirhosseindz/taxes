@@ -21,6 +21,16 @@
                 @enderror
             </div>
 
+            <div class="form-group has-feedback @error('username') has-error @enderror">
+                <input id="username" type="text" name="username" class="form-control" placeholder="{{ __('Username') }}" value="{{ old('username') }}" required autocomplete="username" autofocus>
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                @error('username')
+                <span class="help-block">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
+
             <div class="form-group has-feedback @error('email') has-error @enderror">
                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="{{ __('E-Mail Address') }}" required autocomplete="email">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

@@ -11,7 +11,7 @@
             @csrf
 
             <div class="form-group has-feedback @error('email') has-error @enderror">
-                <input id="email" type="email" name="email" class="form-control" placeholder="{{ __('E-Mail Address') }}" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                <input id="email" type="text" name="email" class="form-control" placeholder="{{ __('E-Mail Address / Username') }}" value="{{ old('email') }}" required autocomplete="email" autofocus>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 @error('email')
                     <span class="help-block">
